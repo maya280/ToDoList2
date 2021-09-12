@@ -15,6 +15,8 @@
 		A1AA4D0B26EE8F6800C5F8C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AA4D0926EE8F6800C5F8C3 /* LaunchScreen.storyboard */; };
 		A1AA4D1626EE8F6900C5F8C3 /* ToDoList2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA4D1526EE8F6900C5F8C3 /* ToDoList2Tests.swift */; };
 		A1AA4D2126EE8F6900C5F8C3 /* ToDoList2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA4D2026EE8F6900C5F8C3 /* ToDoList2UITests.swift */; };
+		A1AA4D2F26EE912400C5F8C3 /* ToDoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA4D2E26EE912400C5F8C3 /* ToDoController.swift */; };
+		A1AA4D3126EE913900C5F8C3 /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA4D3026EE913900C5F8C3 /* WeatherController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A1AA4D1C26EE8F6900C5F8C3 /* ToDoList2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoList2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AA4D2026EE8F6900C5F8C3 /* ToDoList2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList2UITests.swift; sourceTree = "<group>"; };
 		A1AA4D2226EE8F6900C5F8C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1AA4D2E26EE912400C5F8C3 /* ToDoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoController.swift; sourceTree = "<group>"; };
+		A1AA4D3026EE913900C5F8C3 /* WeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				A1AA4CFE26EE8F6500C5F8C3 /* AppDelegate.swift */,
 				A1AA4D0026EE8F6500C5F8C3 /* SceneDelegate.swift */,
 				A1AA4D0226EE8F6500C5F8C3 /* ViewController.swift */,
+				A1AA4D2E26EE912400C5F8C3 /* ToDoController.swift */,
+				A1AA4D3026EE913900C5F8C3 /* WeatherController.swift */,
 				A1AA4D0426EE8F6500C5F8C3 /* Main.storyboard */,
 				A1AA4D0726EE8F6800C5F8C3 /* Assets.xcassets */,
 				A1AA4D0926EE8F6800C5F8C3 /* LaunchScreen.storyboard */,
@@ -259,8 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1AA4D0326EE8F6500C5F8C3 /* ViewController.swift in Sources */,
+				A1AA4D2F26EE912400C5F8C3 /* ToDoController.swift in Sources */,
 				A1AA4CFF26EE8F6500C5F8C3 /* AppDelegate.swift in Sources */,
 				A1AA4D0126EE8F6500C5F8C3 /* SceneDelegate.swift in Sources */,
+				A1AA4D3126EE913900C5F8C3 /* WeatherController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
