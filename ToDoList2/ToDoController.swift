@@ -35,7 +35,7 @@ class ToDoController: UIViewController, UITableViewDelegate {
             guard let thing = alert.textFields?.first?.text else {return}
             self.things.append(thing) //puts the entry into the array
             self.tableView.reloadData() //reloads the table so that it updates
-            self.ref.child("note/note\(self.things.count)").setValue(thing)
+            self.ref.child("note\(self.things.count)").setValue(thing)
         }
         alert.addAction(action)
         present(alert, animated: true)
@@ -62,5 +62,7 @@ extension ToDoController: UITableViewDataSource {
         guard editingStyle == .delete else { return }
         things.remove(at: indexPath.row)
         tableView.deleteRows(at: [indexPath], with: .automatic)
+        print(indexPath.row)
+        ref.child("note\(indexPath.row + 1)").removeValue()
     }
 }
