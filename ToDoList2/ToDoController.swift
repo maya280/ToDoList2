@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class ToDoController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    let ref = Database.database().reference() //reference to database
     
     var things = [String]() //the string array that stores the list
     
@@ -33,6 +35,7 @@ class ToDoController: UIViewController, UITableViewDelegate {
             guard let thing = alert.textFields?.first?.text else {return}
             self.things.append(thing) //puts the entry into the array
             self.tableView.reloadData() //reloads the table so that it updates
+            self.ref.child("note/note\(self.things.count)").setValue(thing)
         }
         alert.addAction(action)
         present(alert, animated: true)
