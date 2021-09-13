@@ -27,6 +27,8 @@ class ToDoController: UIViewController, UITableViewDelegate {
     }
     
     @IBAction func onAddTapped(_ sender: Any) { //when user taps add button, notification pops up and they can add the note
+        let hapgen = UINotificationFeedbackGenerator()
+        hapgen.notificationOccurred(.success)
         let alert = UIAlertController(title: "Add list item", message: nil, preferredStyle: UIAlertController.Style.alert) //titles the alert
         alert.addTextField {(thingTF) in
             thingTF.placeholder = "Enter list item" //placeholder where user enters to do list item
