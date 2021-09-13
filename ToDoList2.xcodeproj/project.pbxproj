@@ -20,6 +20,7 @@
 		A1AA4D2F26EE912400C5F8C3 /* ToDoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA4D2E26EE912400C5F8C3 /* ToDoController.swift */; };
 		A1AA4D3126EE913900C5F8C3 /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA4D3026EE913900C5F8C3 /* WeatherController.swift */; };
 		A1FC0EEF26EEE046005757F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1FC0EEE26EEE046005757F1 /* GoogleService-Info.plist */; };
+		A1FC0EF126EEF2A3005757F1 /* APIWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FC0EF026EEF2A3005757F1 /* APIWeatherService.swift */; };
 		DC11ED4977B7B12F8E3A62FC /* Pods_ToDoList2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7591C1CEF3BDA62DAE6738F /* Pods_ToDoList2.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		A1AA4D2E26EE912400C5F8C3 /* ToDoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoController.swift; sourceTree = "<group>"; };
 		A1AA4D3026EE913900C5F8C3 /* WeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
 		A1FC0EEE26EEE046005757F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1FC0EF026EEF2A3005757F1 /* APIWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWeatherService.swift; sourceTree = "<group>"; };
 		A6C5A6808BD0ED5DAFB32D6E /* Pods_ToDoList2_ToDoList2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoList2_ToDoList2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B373621F5F24805BD11A7911 /* Pods-ToDoList2-ToDoList2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoList2-ToDoList2UITests.debug.xcconfig"; path = "Target Support Files/Pods-ToDoList2-ToDoList2UITests/Pods-ToDoList2-ToDoList2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7DD3FEDBAE42EFEA23082FF /* Pods-ToDoList2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoList2.release.xcconfig"; path = "Target Support Files/Pods-ToDoList2/Pods-ToDoList2.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				A1AA4D0226EE8F6500C5F8C3 /* ViewController.swift */,
 				A1AA4D2E26EE912400C5F8C3 /* ToDoController.swift */,
 				A1AA4D3026EE913900C5F8C3 /* WeatherController.swift */,
+				A1FC0EF026EEF2A3005757F1 /* APIWeatherService.swift */,
 				A1AA4D0426EE8F6500C5F8C3 /* Main.storyboard */,
 				A1AA4D0726EE8F6800C5F8C3 /* Assets.xcassets */,
 				A1AA4D0926EE8F6800C5F8C3 /* LaunchScreen.storyboard */,
@@ -417,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1AA4D0326EE8F6500C5F8C3 /* ViewController.swift in Sources */,
+				A1FC0EF126EEF2A3005757F1 /* APIWeatherService.swift in Sources */,
 				A1AA4D2F26EE912400C5F8C3 /* ToDoController.swift in Sources */,
 				A1AA4CFF26EE8F6500C5F8C3 /* AppDelegate.swift in Sources */,
 				A1AA4D0126EE8F6500C5F8C3 /* SceneDelegate.swift in Sources */,

@@ -132,20 +132,56 @@
                                     <action selector="close:" destination="PDL-95-qtW" eventType="touchUpInside" id="xJ1-zN-iU5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your zipcode:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Bb-9E-mfj">
+                                <rect key="frame" x="133" y="131" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb2-wL-5Oi">
+                                <rect key="frame" x="253" y="162" width="48" height="30"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="getWeather:" destination="PDL-95-qtW" eventType="touchUpInside" id="eNC-1i-BiK"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q29-rp-MB8">
+                                <rect key="frame" x="191" y="160" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Inh-AO-ffL">
+                                <rect key="frame" x="158.5" y="254" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cTm-x6-mHR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="7Bb-9E-mfj" firstAttribute="centerX" secondItem="3Sz-i6-TVg" secondAttribute="centerX" id="A7e-LV-8Le"/>
                             <constraint firstItem="Bgm-A4-tgb" firstAttribute="centerX" secondItem="3Sz-i6-TVg" secondAttribute="centerX" id="FBF-cs-V4j"/>
+                            <constraint firstItem="tb2-wL-5Oi" firstAttribute="leading" secondItem="q29-rp-MB8" secondAttribute="trailing" constant="30" id="HD3-3J-vq1"/>
+                            <constraint firstItem="7Bb-9E-mfj" firstAttribute="top" secondItem="Bgm-A4-tgb" secondAttribute="bottom" constant="60" id="Min-bJ-1Pe"/>
                             <constraint firstItem="Bgm-A4-tgb" firstAttribute="top" secondItem="cTm-x6-mHR" secondAttribute="top" constant="50" id="Nju-6h-QpM"/>
+                            <constraint firstItem="q29-rp-MB8" firstAttribute="centerX" secondItem="3Sz-i6-TVg" secondAttribute="centerX" id="YbD-pn-FJm"/>
+                            <constraint firstItem="q29-rp-MB8" firstAttribute="top" secondItem="7Bb-9E-mfj" secondAttribute="bottom" constant="8" symbolic="YES" id="Zci-A3-6IU"/>
                             <constraint firstItem="b7v-bC-9A5" firstAttribute="top" secondItem="cTm-x6-mHR" secondAttribute="top" constant="20" id="dn4-lC-G7n"/>
+                            <constraint firstItem="Inh-AO-ffL" firstAttribute="top" secondItem="q29-rp-MB8" secondAttribute="bottom" constant="60" id="rfF-VQ-3OT"/>
+                            <constraint firstItem="tb2-wL-5Oi" firstAttribute="top" secondItem="7Bb-9E-mfj" secondAttribute="bottom" constant="10" id="rp7-hl-MV7"/>
+                            <constraint firstItem="Inh-AO-ffL" firstAttribute="centerX" secondItem="3Sz-i6-TVg" secondAttribute="centerX" id="y5k-3b-yan"/>
                             <constraint firstItem="b7v-bC-9A5" firstAttribute="leading" secondItem="cTm-x6-mHR" secondAttribute="leading" constant="28" id="zS9-i5-oXz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tempDisplay" destination="Inh-AO-ffL" id="I9W-Km-NyR"/>
+                        <outlet property="zip" destination="q29-rp-MB8" id="S4p-aQ-qLr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojw-SP-Pku" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1338" y="78"/>
+            <point key="canvasLocation" x="1337.68115942029" y="77.678571428571431"/>
         </scene>
     </scenes>
     <resources>
